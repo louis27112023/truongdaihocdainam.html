@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <link rel="stylesheet" href="khung.css">
+         <link rel="stylesheet" href="anhdong.css">
+          <link rel="stylesheet" href="styles.css">
+        <title>Trường Đại học Đại Nam</title>
+       
+      </head>
+      <body>
+          
+        <header>
+          <h1>Trường Đại học Đại Nam</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="chuongtrinhdaotao.html">Chương trình đào tạo</a></li>
+            <li><a href="#">đóng góp ý kiến</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            
+          </ul>
+        </nav>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .header-image {
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+
+        .header-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var headerImage = document.querySelector('.header-image');
+            var img = headerImage.querySelector('img');
+
+            function resizeImage() {
+                var windowWidth = window.innerWidth;
+                var windowHeight = window.innerHeight;
+                var imageAspectRatio = img.naturalWidth / img.naturalHeight;
+                var windowAspectRatio = windowWidth / windowHeight;
+
+                if (windowAspectRatio > imageAspectRatio) {
+                    img.style.width = '100%';
+                    img.style.height = 'auto';
+                } else {
+                    img.style.width = 'auto';
+                    img.style.height = '100%';
+                }
+            }
+
+            window.addEventListener('resize', resizeImage);
+            resizeImage();
+        });
+    </script>
+    <title>Liên hệ</title>
+</head>
+<body>
+    <h1>Liên hệ</h1>
+    <form action="/submit-contact-form" method="post">
+        <div class="header-image">
+            <img src="6.jpg" alt="Ảnh đại diện">
+        </div>
+       <center> <P><label for="name">Bùi Đình Phúc</label></P>
+        
+
+        <p><label for="email">Địa chỉ email:bphuc20004@gmail.com</label></p>
+        
+
+        <p><label for="phone">Số điện thoại:0774368433</label></p>
+        
+
+        <label for="message">phản hồi :</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Gửi">
+    </form></center>
+    <h2>Kết nối với tôi trên các nền tảng khác</h2>
+    <ul>
+        <li><a href="https://www.facebook.com/buidinhphuc" target="_blank">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/buidinhphuc" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/buidinhphuc" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/buidinhphuc" target="_blank">Twitter</a></li>
+    </ul>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        margin-top: 30px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    .section {
+        margin-top: 40px;
+    }
+
+    .highlight {
+        color: blue;
+        font-weight: bold;
+    }
+</style>
+</html>

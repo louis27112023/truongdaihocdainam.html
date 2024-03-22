@@ -1,0 +1,15 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
